@@ -21,7 +21,7 @@ class Application @Inject()(ws: WSClient)  extends Controller {
             }
         }
         // If Production, use build files.
-        case false => Assets.at("public/bundles", file)
+        case false => Assets.at("/public/bundles", file)
     }
 
 }
